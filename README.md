@@ -40,7 +40,6 @@ En el portafolio vas a encontrar:
 
 * Sitios web responsivos
 * Aplicaciones frontend con JavaScript
-* Proyectos con integración backend
 * Demos funcionales desplegadas
 
 Cada proyecto incluye una breve descripción, tecnologías utilizadas y acceso al código fuente.
