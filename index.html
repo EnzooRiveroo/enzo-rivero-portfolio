@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo | Full Stack Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/favicon/icons8-frontend-96.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="loader-container">
+        <div class="pulsate-text brand-font">BIENVENIDOS A MI PRESENTACIÓN</div>
+        <div class="loader-tube">
+            <div class="loader-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percent brand-font" id="loader-text">0%</div>
+    </div>
+
+    <div id="main-content">
+
+        <nav class="hud-header p-4 fixed inset-x-0 z-50 flex justify-between items-center backdrop-blur-md">
+            <div class="text-xl font-bold tracking-widest text-white brand-font">
+                ENZO<span class="text-[var(--neon-green)]">.DEV</span>
+            </div>
+            <div class="live-clock" id="clock-display">
+                --/--/---- <br> 00:00:00
+            </div>
+        </nav>
+
+        <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 hero-section">
+            <h1 class="text-4xl md:text-7xl font-black mb-4 glitch-text">
+                HOLA, SOY <span class="highlight">ENZO</span> <span class="animate-bounce inline-block">👋</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 max-w-2xl leading-relaxed">
+                Estudiante de <span class="text-[var(--neon-yellow)] font-bold">Desarrollo Fullstack</span>.
+                Aquí presento mis avances sólidos y claros en el mundo de la web.
+                <br>
+                <span class="text-sm text-[var(--neon-green)] mt-2 block">> SYSTEM STATUS: ONLINE_</span>
+            </p>
+        </section>
+
+        <section id="skills" class="py-20 px-4 bg-black/50">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-3xl mb-12 text-[var(--neon-yellow)] border-b border-[var(--neon-yellow)] inline-block pb-2 flex items-center">
+                    <i class="fas fa-microchip mr-3 mt-1"></i> ARSENAL TECNOLÓGICO
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="tech-card p-8 rounded-xl text-center">
+                        <i class="fab fa-html5 text-orange-600 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400">Estructura semántica sólida. El esqueleto de mis aplicaciones,
+                            organizado y limpio.</p>
+                    </div>
+
+                    <div class="tech-card p-8 rounded-xl text-center">
+                        <i class="fab fa-css3-alt text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">CSS</h3>
+                        <p class="text-sm text-gray-400">Estilos extravagantes, Flexbox, Grid y animaciones fluidas como
+                            las que ves aquí.</p>
+                    </div>
+
+                    <div class="tech-card p-8 rounded-xl text-center">
+                        <i class="fab fa-js text-yellow-500 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
+                        <p class="text-sm text-gray-400">Interactividad real. Manipulación del DOM, lógica y eventos en
+                            vivo.</p>
+                    </div>
+
+                    <div class="tech-card p-8 rounded-xl text-center">
+                        <div class="flex justify-center items-center mb-4 space-x-4">
+                            <i class="fab fa-git-alt text-red-600 text-4xl"></i>
+                            <i class="fab fa-github text-white text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Git & GitHub</h3>
+                        <p class="text-sm text-gray-400">
+                            Control de versiones descentralizado. Flujos de trabajo eficientes para colaboración en
+                            equipo y despliegue continuo.
+                        </p>
+                    </div>
+
+                    <div class="tech-card p-8 rounded-xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55"
+                            viewBox="0 0 48 48" class="block mx-auto mb-4">
+                            <path fill="#00acc1"
+                                d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z">
+                            </path>
+                        </svg>
+                        <h3 class="text-2xl font-bold mb-2">Tailwind CSS</h3>
+                        <p class="text-sm text-gray-400"> Utilidades atómicas y responsivas para un diseño rápido y
+                            eficiente. Clases que dan vida al esqueleto de HTML.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-4 text-center">
+            <h2 class="text-3xl mb-8 text-white brand-font">MIS TRABAJOS</h2>
+
+            <button id="btn-show-projects" class="btn-neon text-xl mb-10">
+                <i class="fas fa-folder-open mr-2"></i> INICIAR PROYECTOS
+            </button>
+
+            <div id="projects-container" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-calendar-alt text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">BARBERÍA PRO-AGENDA</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Aplicación de gestión de turnos para barberías que permite agendar, filtrar y eliminar citas
+                            de
+                            forma sencilla. Presenta un diseño moderno de Glassmorphism (vidrio esmerilado).
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/Sistema-Turnos-Barberia/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/Sistema-Turnos-Barberia" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-share-alt text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">RED SOCIAL (SUPABASE)</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Aplicación web minimalista que simula funcionalidades básicas de una red social. El proyecto
+                            se centra en la experiencia de usuario (UX) y la interacción dinámica.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/mini-red-social-supabase/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/mini-red-social-supabase" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-calculator text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">CALCULADORA JS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Una calculadora web interactiva con un diseño inmersivo y
+                            futurista. Utiliza una estética de neón azul y efectos de brillo, junto con un fondo
+                            dinámico.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/calculadora-js/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/calculadora-js" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-calendar-check text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">INVITACIÓN INTERACTIVA (EmailJS)</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Este proyecto es una Invitación Interactiva Personalizada implementada como una landing page
+                            de confirmación de asistencia (RSVP).
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/invitacion-mates/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/invitacion-mates" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-handshake text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">PRIMER TRABAJO (FREELANCE)</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Este proyecto es una landing page simple y elegante, probablemente diseñada como una página
+                            de espera o "coming soon" para el lanzamiento de un producto o evento llamado "EL APERITIVO"
+                            de LAUTI VERA
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/lautivera-elaperitivo-countdown/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/lautivera-elaperitivo-countdown" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fab fa-css3-alt text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">CSS ANIMACIONES</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Exploración y demostración de animaciones complejas y transiciones avanzadas utilizando
+                            puramente CSS (keyframes, animation, transition). Incluye efectos de carga, transformaciones
+                            2D/3D y animaciones de texto.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/CSS-Interactive-Animations/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR ALSITIOSITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/CSS-Interactive-Animations" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-share-alt text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">RED SOCIAL (SUPABASE)</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Aplicación web minimalista que simula funcionalidades básicas de una red social. El proyecto
+                            se centra en la experiencia de usuario (UX) y la interacción dinámica.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/mini-red-social-supabase/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/mini-red-social-supabase" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-calculator text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">CALCULADORA JS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Una calculadora web interactiva con un diseño inmersivo y
+                            futurista. Utiliza una estética de neón azul y efectos de brillo, junto con un fondo
+                            dinámico.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/calculadora-js/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/calculadora-js" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-calendar-check text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">INVITACIÓN INTERACTIVA (EmailJS)</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Este proyecto es una Invitación Interactiva Personalizada implementada como una landing page
+                            de confirmación de asistencia (RSVP).
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/invitacion-mates/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/invitacion-mates" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-shopping-cart text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">E-COMMERCE
+                        (Full Stack – In Progress)
+                    </h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            E-commerce en proceso de desarrollo. La versión actual funciona como página de
+                            pre-lanzamiento, con una base frontend optimizada y pensada para evolucionar hacia una
+                            solución full stack con backend, base de datos y lógica de negocio.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/luz-essentials-holistic-website/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/luz-essentials-holistic-website" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card p-4 rounded-lg">
+                    <div class="h-48 bg-gray-800 mb-4 rounded flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-camera text-6xl text-[var(--neon-green)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">SITIO WEB DE FOTOGRAFÍA Y EVENTOS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Este proyecto es el sitio web profesional para un estudio que ofrece servicios de fotografía
+                            y diseño para todo tipo de eventos sociales y corporativos, con galerías de fotos y paquetes
+                            personalizables.
+                        </p>
+                        <div class="mt-4 flex flex-col space-y-3">
+                            <a href="https://enzooriveroo.github.io/jf-eventos-website/" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> IR AL SITIO
+                                </button>
+                            </a>
+                            <a href="https://github.com/EnzooRiveroo/jf-eventos-website" target="_blank"
+                                class="block w-full">
+                                <button
+                                    class="bg-[var(--neon-green)] text-black font-bold py-2 px-1 rounded hover:bg-white transition-colors w-full uppercase brand-font text-xs sm:text-sm">
+                                    <i class="fab fa-github mr-1"></i> VER CÓDIGO
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certifications-section" class="py-20 px-4 text-center">
+            <h2 class="text-3xl mb-8 text-white brand-font">MIS CERTIFICACIONES</h2>
+
+            <button id="btn-show-certs" class="btn-neon text-xl mb-10">
+                <i class="fas fa-certificate mr-2"></i> ABRIR CERTIFICADOS
+            </button>
+
+            <div id="certs-container" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Intr. a la web.jpg" alt="Certificado Introducción a la Web"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">INTRO. A LA WEB: HISTORIA Y FUNC.</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Curso de Introducción a la Web: Historia y Funcionamiento de Internet
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Introducción a la Web: Historia y Funcionamiento"
+                            data-img-src="img/certificado/Intr. a la web.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/HTML.jpg" alt="Certificado HTML" class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">CURSO DE HTML</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Dominio de etiquetas, estructura y semántica esencial de HTML5.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de HTML" data-img-src="img/certificado/HTML.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/CSS.jpg" alt="Certificado CSS" class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">CURSO DE CSS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Manejo básico de selectores, modelos de caja y propiedades de estilo.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de CSS" data-img-src="img/certificado/CSS.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Definitivo HTML y CSS.jpg" alt="Certificado Definitivo HTML y CSS"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">DEF. HTML Y CSS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Curso Definitivo de HTML y CSS. Conceptos avanzados y patrones de diseño.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso Definitivo de HTML y CSS"
+                            data-img-src="img/certificado/Definitivo HTML y CSS.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Practico HTML y CSS.jpg" alt="Certificado Práctico HTML y CSS"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">PRÁCTICO DE HTML Y CSS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Aplicación práctica de conocimientos para construir interfaces reales y responsivas.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso Práctico de HTML y CSS"
+                            data-img-src="img/certificado/Practico HTML y CSS.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Fundamentos JS.jpg" alt="Certificado Fundamentos de JavaScript"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">FUNDAMENTOS DE JAVASCRIPT</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Dominio de la sintaxis, variables, funciones, estructuras de control y el DOM.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de Fundamentos de JavaScript"
+                            data-img-src="img/certificado/Fundamentos JS.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Frontend developer.jpg" alt="Certificado Frontend Developer"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">FRONTEND DEVELOPER</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Conceptos integrales de desarrollo Frontend.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de Frontend Developer"
+                            data-img-src="img/certificado/Frontend developer.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Practico Frontend.jpg" alt="Certificado Práctico Frontend Developer"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">PRÁCTICO FRONTEND DEV</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Aplicación real de habilidades Frontend para la construcción de interfaces profesionales.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso Práctico de Frontend Developer"
+                            data-img-src="img/certificado/Practico Frontend.jpg">
+                            VER CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Git y github.jpg" alt="Certificado Git & GitHub"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">GIT Y GITHUB</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Control de versiones, manejo de repositorios, ramas y flujos de trabajo colaborativo.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de GIT Y GITHUB" data-img-src="img/certificado/Git y github.jpg"> VER
+                            CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cert-card p-4 rounded-lg">
+                    <div class="cert-image-container mb-4">
+                        <img src="img/certificado/Tailwind CSS.jpg" alt="Certificado Tailwind CSS"
+                            class="cert-thumbnail">
+                    </div>
+                    <h3 class="text-xl font-bold text-[var(--neon-yellow)] mb-2">TAILWIND CSS</h3>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <p class="text-gray-400 text-sm mb-4 text-left">
+                            Enfocado en el desarrollo de interfaces modernas, responsivas y escalables. Adquirí
+                            experiencia práctica en el uso de utility-first CSS, diseño responsive, optimización de
+                            estilos y buenas prácticas para proyectos frontend.
+                        </p>
+                        <button
+                            class="view-cert-btn bg-[var(--neon-yellow)] text-black font-bold py-2 px-6 rounded hover:bg-white transition-colors w-full uppercase brand-font"
+                            data-title="Curso de GIT Y GITHUB" data-img-src="img/certificado/Tailwind CSS.jpg"> VER
+                            CERTIFICADO
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer class="text-center py-8 text-gray-500 border-t border-gray-900 mt-10">
+            <p>© 2025 ENZO DEV. ALL RIGHTS RESERVED.</p>
+            <div class="mt-4 space-x-4">
+                <a href="https://github.com/EnzooRiveroo" class="text-[var(--neon-yellow)] hover:text-white"
+                    target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/enzooriveroo/" class="text-[var(--neon-yellow)] hover:text-white"
+                    target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.instagram.com/enzooriveroo98/" class="text-[var(--neon-yellow)] hover:text-white"
+                    target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="certificate-modal" class="hidden fixed inset-0 z-[10001] opacity-0 transition-opacity duration-300">
+        <div class="modal-content-wrapper">
+            <button class="modal-close" id="modal-close-btn" aria-label="Cerrar">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-certificate-img" class="modal-certificate" src="" alt="Certificado Ampliado">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
